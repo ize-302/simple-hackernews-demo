@@ -1,0 +1,23 @@
+@mixin for-sm-up {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin for-md-up {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-lg-up {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-xl-up {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}

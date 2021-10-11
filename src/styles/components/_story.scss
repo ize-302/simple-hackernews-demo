@@ -1,0 +1,30 @@
+.story {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+
+  &__num {
+    font-size: 10åpx;
+    margin-right: 10px;
+    color: #666;
+  }
+
+  &__title {
+    color: $orange;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16;
+  }
+
+  &__time {
+    font-size: 12px;
+    color: #666;
+  }
+
+  &__author {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}

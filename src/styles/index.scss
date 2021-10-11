@@ -1,0 +1,37 @@
+@import "./mixins";
+@import "./variables";
+@import "./components/story";
+
+.App {
+  padding: 5px 10px;
+  margin: 0;
+  @include for-md-up {
+    max-width: 1000px;
+    margin: 2.5vh auto;
+    background-color: white;
+    width: 100%;
+    min-height: 95vh;
+    overflow-y: scroll;
+    padding: 30px 50px;
+  }
+}
+
+.header {
+  color: #000;
+  text-align: left;
+}
+
+.button__wrapper {
+  display: flex;
+  justify-content: center;
+  button {
+    background: $orange;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
