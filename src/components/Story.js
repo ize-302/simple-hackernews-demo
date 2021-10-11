@@ -7,7 +7,7 @@ const Story = memo(function Story({ storyId, index }) {
 
   useEffect(() => {
     getStory(storyId).then((data) => data && data.url && setStory(data));
-  }, []);
+  }, [storyId]);
 
   return story && story.url ? (
     <div className="story">
